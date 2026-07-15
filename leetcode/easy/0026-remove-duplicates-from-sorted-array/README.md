@@ -63,12 +63,13 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 78.95%)  
-**Memory:** 47 MB (beats 9.35%)  
-**Submitted:** 2026-07-15T17:08:41.814Z  
+**Memory:** 46.7 MB (beats 63.25%)  
+**Submitted:** 2026-07-15T17:49:11.934Z  
 
 ```java
 class Solution {
     public int removeDuplicates(int[] nums) {
+        if(nums.length==0) return 0;
        int k=1;
        for(int i=1; i<nums.length; i++){
         if(nums[i-1]!=nums[i]){
