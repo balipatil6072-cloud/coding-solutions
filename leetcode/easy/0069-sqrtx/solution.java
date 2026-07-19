@@ -3,9 +3,9 @@ class Solution {
         if (x <= 1)
             return x;
 
-        for (int i = 1; i <=x / 2; i++) {
+        for (long i = 1; i <=x / 2; i++) {
             if (i * i > x)
-                return i - 1;
+                return (int)(i-1);
 
         }
         return x / 2;
