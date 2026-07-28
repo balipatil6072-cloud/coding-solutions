@@ -36,9 +36,9 @@ Explanation: There is no way to express 4 as the sum of 3 consecutive integers.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.3 MB  
-**Submitted:** 2026-07-28T17:09:40.186Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 43.2 MB (beats 22.88%)  
+**Submitted:** 2026-07-28T17:09:41.965Z  
 
 ```java
 class Solution {
