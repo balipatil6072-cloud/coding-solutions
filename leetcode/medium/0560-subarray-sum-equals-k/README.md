@@ -37,20 +37,21 @@ Output: 2
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-07-29T17:49:55.496Z  
+**Runtime:** 1536 ms (beats 20.49%)  
+**Memory:** 48.4 MB (beats 87.29%)  
+**Submitted:** 2026-07-31T17:12:06.933Z  
 
 ```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
         int n=nums.length;
-        
-                int cnt=0;
-        for(int i=0;i<nums.length-1;i++){
-            if(nums[i]+nums[i+1]==k || nums[i]==k)
-            cnt++;
-            
+        int cnt=0;
+        for(int i=0;i<nums.length;i++){
+            int sum=0;
+            for(int j=i;j<nums.length;j++){
+                sum+=nums[j];
+                if(sum==k) cnt++;
+            }
         }
         return cnt;
     }
