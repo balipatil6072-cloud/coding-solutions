@@ -40,8 +40,8 @@ Explanation: We return false because 3.742 * 3.742 = 14 and 3.742 is not an inte
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 41.3 MB  
-**Submitted:** 2026-08-01T18:28:34.160Z  
+**Memory:** 41.8 MB  
+**Submitted:** 2026-08-01T18:29:17.840Z  
 
 ```java
 class Solution {
@@ -53,7 +53,7 @@ class Solution {
         int mid=low+(high-low)/2;
         long sq=mid*mid;
         if(sq==num) return true;
-        else if(mid*mid>num) high=mid-1;
+        else if(sq>num) high=mid-1;
         else low=mid+1;
        
        }
