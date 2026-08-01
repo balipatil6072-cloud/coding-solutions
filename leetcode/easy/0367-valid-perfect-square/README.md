@@ -41,14 +41,14 @@ Explanation: We return false because 3.742 * 3.742 = 14 and 3.742 is not an inte
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 41.8 MB  
-**Submitted:** 2026-08-01T18:29:17.840Z  
+**Submitted:** 2026-08-01T18:30:04.179Z  
 
 ```java
 class Solution {
     public boolean isPerfectSquare(int num) {
-       int low=0;
+       int low=1;
        int high=num;
-       int ans;
+       
        while(low<=high){
         int mid=low+(high-low)/2;
         long sq=mid*mid;
