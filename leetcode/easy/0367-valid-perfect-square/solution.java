@@ -7,7 +7,7 @@ class Solution {
         int mid=low+(high-low)/2;
         long sq=mid*mid;
         if(sq==num) return true;
-        else if(mid*mid>num) high=mid-1;
+        else if(sq>num) high=mid-1;
         else low=mid+1;
        
        }
