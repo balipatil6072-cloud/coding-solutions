@@ -39,9 +39,9 @@ Explanation: We return false because 3.742 * 3.742 = 14 and 3.742 is not an inte
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.8 MB  
-**Submitted:** 2026-08-01T18:30:04.179Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 41.9 MB (beats 76.06%)  
+**Submitted:** 2026-08-01T18:32:22.602Z  
 
 ```java
 class Solution {
@@ -51,7 +51,7 @@ class Solution {
        
        while(low<=high){
         int mid=low+(high-low)/2;
-        long sq=mid*mid;
+        long sq=(long)mid*mid;
         if(sq==num) return true;
         else if(sq>num) high=mid-1;
         else low=mid+1;
